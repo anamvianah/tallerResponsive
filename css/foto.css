@@ -1,0 +1,44 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+}
+
+.flex-container > div {
+  height: 1000px;
+  width: 100%;
+  border: 5px solid #fff;
+  background-position: center;
+  background-size: cover;
+}
+.flex-container > .tropical {
+  background-image: url("./../img/annie-spratt-b2AsaZiG9mo-unsplash.jpg");
+}
+
+.flex-container > .cold {
+  background-image: url("./../img/marcos-paulo-prado-IQm1-ZYKY74-unsplash.jpg");
+}
+.flex-container > .pnw {
+  background-image: url("./../img/nathan-dumlao-4_mJ1TbMK8A-unsplash.jpg");
+}
+.flex-container > .desert {
+  background-image: url("./../img/sai-de-silva-httxBNGKapo-unsplash.jpg");
+}
+.menu{
+  display: flex;
+  list-style: none;
+  
+}
+.menu li{
+  margin-right: 20px;
+}
+.menu li a{
+  color: black;
+}
+
+@media only screen and (max-width: 1000px){
+    .flex-container{
+        flex-wrap: wrap;
+    }
+}
